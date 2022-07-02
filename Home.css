@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(135deg,rgb(255, 162, 0),rgba(24, 218, 205, 0.91),yellow);
+}
+.container{
+    padding: 10px;;
+    max-width:600px;
+    background: radial-gradient(yellow,rgb(255, 145, 0));
+    font-size: 1.5em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black,2px 2px 10px black,2px 2px 20px black;
+}
+.quoteBox{
+    padding: 10px 15px;
+}
+.quote{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    
+}
+#quote_text::before{
+    content: "❝";
+    font-size: 2rem;
+}
+#quote_text::after{
+    font-size: 2rem;
+    content: "❞";
+}
+.author{
+    font-family: 'Dancing Script', cursive;
+    text-align: right;
+}
+hr{
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.buttons{
+    padding:10px 5px 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.twitter{
+    background-color:aliceblue;
+    padding: 1px 3px;
+    border-radius: 2px;
+    border: 1px dashed blue;
+}
+.twitter:active{
+    color: white;
+    background-color: blue;
+}
+ion-icon[name="logo-twitter"]{
+    vertical-align:middle;
+}
+.nextQuote{
+    padding: 2px 5px;
+    color: lightpink;
+    background: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
