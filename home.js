@@ -15,6 +15,6 @@ const getNewQuote = async () =>
     }
     text.innerHTML=quote;
     author.innerHTML="~ "+auth;
-    tweetButton.href="https://twitter.com/intent/tweet?text="+quote+" ~ "+auth;
+    tweetButton.href="https://twitter.com/intent/tweet?text="+quote+"  ~  "+auth;
 }
 getNewQuote();
